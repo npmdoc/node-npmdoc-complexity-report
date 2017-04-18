@@ -1,9 +1,14 @@
-# api documentation for  [complexity-report (v1.4.1)](https://github.com/philbooth/complexity-report)  [![npm package](https://img.shields.io/npm/v/npmdoc-complexity-report.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-complexity-report) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-complexity-report.svg)](https://travis-ci.org/npmdoc/node-npmdoc-complexity-report)
+# npmdoc-complexity-report
+
+#### api documentation for  [complexity-report (v1.4.1)](https://github.com/philbooth/complexity-report)  [![npm package](https://img.shields.io/npm/v/npmdoc-complexity-report.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-complexity-report) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-complexity-report.svg)](https://travis-ci.org/npmdoc/node-npmdoc-complexity-report)
+
 #### Software complexity analysis for JavaScript projects
 
-[![NPM](https://nodei.co/npm/complexity-report.png?downloads=true)](https://www.npmjs.com/package/complexity-report)
+[![NPM](https://nodei.co/npm/complexity-report.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/complexity-report)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-complexity-report/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-complexity-report_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-complexity-report/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-complexity-report/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-complexity-report/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-complexity-report/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-complexity-report/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-complexity-report/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Phil Booth",
-        "email": "pmbooth@gmail.com"
+        "name": "Phil Booth"
     },
     "bin": {
         "cr": "./src/index.js"
@@ -29,7 +33,6 @@
     "contributors": [
         {
             "name": "Phil Booth",
-            "email": "pmbooth@gmail.com",
             "url": "https://github.com/philbooth"
         },
         {
@@ -108,17 +111,14 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "philbooth",
-            "email": "pmbooth@gmail.com"
+            "name": "philbooth"
         },
         {
-            "name": "addisonj",
-            "email": "addisonj@gmail.com"
+            "name": "addisonj"
         }
     ],
     "name": "complexity-report",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/philbooth/complexity-report.git"
@@ -130,16 +130,6 @@
     "version": "1.4.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module complexity-report](#apidoc.module.complexity-report)
-
-
-
-# <a name="apidoc.module.complexity-report"></a>[module complexity-report](#apidoc.module.complexity-report)
 
 
 
