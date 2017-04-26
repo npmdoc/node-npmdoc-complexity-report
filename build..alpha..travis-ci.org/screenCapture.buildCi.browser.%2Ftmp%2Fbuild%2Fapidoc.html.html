@@ -54,12 +54,377 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report">module complexity-report</a><ol>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">complexity-report.</span>json</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">complexity-report.</span>markdown</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">complexity-report.</span>minimal</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">complexity-report.</span>modules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">complexity-report.</span>plain</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">complexity-report.</span>xml</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report.json">module complexity-report.json</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.complexity-report.json.format">
+            function <span class="apidocSignatureSpan">complexity-report.json.</span>format
+            <span class="apidocSignatureSpan">(result)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report.markdown">module complexity-report.markdown</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.complexity-report.markdown.format">
+            function <span class="apidocSignatureSpan">complexity-report.markdown.</span>format
+            <span class="apidocSignatureSpan">(result)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report.minimal">module complexity-report.minimal</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.complexity-report.minimal.format">
+            function <span class="apidocSignatureSpan">complexity-report.minimal.</span>format
+            <span class="apidocSignatureSpan">(result)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report.modules">module complexity-report.modules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.complexity-report.modules.format">
+            function <span class="apidocSignatureSpan">complexity-report.modules.</span>format
+            <span class="apidocSignatureSpan">(result)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report.plain">module complexity-report.plain</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.complexity-report.plain.format">
+            function <span class="apidocSignatureSpan">complexity-report.plain.</span>format
+            <span class="apidocSignatureSpan">(result)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.complexity-report.xml">module complexity-report.xml</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.complexity-report.xml.format">
+            function <span class="apidocSignatureSpan">complexity-report.xml.</span>format
+            <span class="apidocSignatureSpan">(result)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.complexity-report" id="apidoc.module.complexity-report">module complexity-report</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.complexity-report.json" id="apidoc.module.complexity-report.json">module complexity-report.json</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.complexity-report.json.format" id="apidoc.element.complexity-report.json.format">
+        function <span class="apidocSignatureSpan">complexity-report.json.</span>format
+        <span class="apidocSignatureSpan">(result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(result) {
+    return JSON.stringify(result, undefined, 4);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+jsRes.reports = jsRes.reports.concat(coffeeRes.reports);
+
+return escomplex.processResults(jsRes, cli.nocoresize || false);
+}
+
+function writeReports (result) {
+var formatted = formatter.<span class="apidocCodeKeywordSpan">format</span>(result);
+
+if (check.unemptyString(cli.output)) {
+    fs.writeFile(cli.output, formatted, 'utf8', function (err) {
+        if (err) {
+            error('writeReport', err);
+        }
+    });
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.complexity-report.markdown" id="apidoc.module.complexity-report.markdown">module complexity-report.markdown</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.complexity-report.markdown.format" id="apidoc.element.complexity-report.markdown.format">
+        function <span class="apidocSignatureSpan">complexity-report.markdown.</span>format
+        <span class="apidocSignatureSpan">(result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(result) {
+    return result.reports.reduce(function (formatted, report) {
+        return formatted + formatModule(report) + '\n\n';
+    }, formatProject(result));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+jsRes.reports = jsRes.reports.concat(coffeeRes.reports);
+
+return escomplex.processResults(jsRes, cli.nocoresize || false);
+}
+
+function writeReports (result) {
+var formatted = formatter.<span class="apidocCodeKeywordSpan">format</span>(result);
+
+if (check.unemptyString(cli.output)) {
+    fs.writeFile(cli.output, formatted, 'utf8', function (err) {
+        if (err) {
+            error('writeReport', err);
+        }
+    });
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.complexity-report.minimal" id="apidoc.module.complexity-report.minimal">module complexity-report.minimal</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.complexity-report.minimal.format" id="apidoc.element.complexity-report.minimal.format">
+        function <span class="apidocSignatureSpan">complexity-report.minimal.</span>format
+        <span class="apidocSignatureSpan">(result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(result) {
+    return result.reports.reduce(function (formatted, report) {
+        return formatted + formatModule(report) + '\n';
+    }, '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+jsRes.reports = jsRes.reports.concat(coffeeRes.reports);
+
+return escomplex.processResults(jsRes, cli.nocoresize || false);
+}
+
+function writeReports (result) {
+var formatted = formatter.<span class="apidocCodeKeywordSpan">format</span>(result);
+
+if (check.unemptyString(cli.output)) {
+    fs.writeFile(cli.output, formatted, 'utf8', function (err) {
+        if (err) {
+            error('writeReport', err);
+        }
+    });
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.complexity-report.modules" id="apidoc.module.complexity-report.modules">module complexity-report.modules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.complexity-report.modules.format" id="apidoc.element.complexity-report.modules.format">
+        function <span class="apidocSignatureSpan">complexity-report.modules.</span>format
+        <span class="apidocSignatureSpan">(result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(result) {
+    return result.reports.reduce(function (formatted, report) {
+        return formatted + report.path + '\n';
+    }, '');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+jsRes.reports = jsRes.reports.concat(coffeeRes.reports);
+
+return escomplex.processResults(jsRes, cli.nocoresize || false);
+}
+
+function writeReports (result) {
+var formatted = formatter.<span class="apidocCodeKeywordSpan">format</span>(result);
+
+if (check.unemptyString(cli.output)) {
+    fs.writeFile(cli.output, formatted, 'utf8', function (err) {
+        if (err) {
+            error('writeReport', err);
+        }
+    });
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.complexity-report.plain" id="apidoc.module.complexity-report.plain">module complexity-report.plain</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.complexity-report.plain.format" id="apidoc.element.complexity-report.plain.format">
+        function <span class="apidocSignatureSpan">complexity-report.plain.</span>format
+        <span class="apidocSignatureSpan">(result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(result) {
+    return result.reports.reduce(function (formatted, report) {
+        return formatted + formatModule(report) + '\n\n';
+    }, formatProject(result));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+jsRes.reports = jsRes.reports.concat(coffeeRes.reports);
+
+return escomplex.processResults(jsRes, cli.nocoresize || false);
+}
+
+function writeReports (result) {
+var formatted = formatter.<span class="apidocCodeKeywordSpan">format</span>(result);
+
+if (check.unemptyString(cli.output)) {
+    fs.writeFile(cli.output, formatted, 'utf8', function (err) {
+        if (err) {
+            error('writeReport', err);
+        }
+    });
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.complexity-report.xml" id="apidoc.module.complexity-report.xml">module complexity-report.xml</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.complexity-report.xml.format" id="apidoc.element.complexity-report.xml.format">
+        function <span class="apidocSignatureSpan">complexity-report.xml.</span>format
+        <span class="apidocSignatureSpan">(result)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function format(result) {
+    return createElementWithAttributes(
+        0,
+        'project',
+        'xmlns="" xml:lang="en" timestamp="' +
+            Date.now() +
+            '" first-order-denisty="' +
+            result.firstOrderDensity +
+            '" change-cost="' +
+            result.changeCost +
+            '" core-size="' +
+            result.coreSize + '"',
+        true,
+        result.reports.reduce(function (formatted, report) {
+            return formatted + formatModule(4, report);
+        }, '')
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+jsRes.reports = jsRes.reports.concat(coffeeRes.reports);
+
+return escomplex.processResults(jsRes, cli.nocoresize || false);
+}
+
+function writeReports (result) {
+var formatted = formatter.<span class="apidocCodeKeywordSpan">format</span>(result);
+
+if (check.unemptyString(cli.output)) {
+    fs.writeFile(cli.output, formatted, 'utf8', function (err) {
+        if (err) {
+            error('writeReport', err);
+        }
+    });
+...</pre></li>
+    </ul>
+
 
 </div>
 
