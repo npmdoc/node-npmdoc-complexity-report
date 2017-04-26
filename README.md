@@ -1,6 +1,6 @@
 # npmdoc-complexity-report
 
-#### api documentation for  [complexity-report (v1.4.1)](https://github.com/philbooth/complexity-report)  [![npm package](https://img.shields.io/npm/v/npmdoc-complexity-report.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-complexity-report) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-complexity-report.svg)](https://travis-ci.org/npmdoc/node-npmdoc-complexity-report)
+#### basic api documentation for  [complexity-report (v1.4.1)](https://github.com/philbooth/complexity-report)  [![npm package](https://img.shields.io/npm/v/npmdoc-complexity-report.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-complexity-report) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-complexity-report.svg)](https://travis-ci.org/npmdoc/node-npmdoc-complexity-report)
 
 #### Software complexity analysis for JavaScript projects
 
